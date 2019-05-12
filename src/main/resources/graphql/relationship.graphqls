@@ -3,3 +3,7 @@ type Relationship {
  to: String!
  relationship: String!
 }
+
+extend type Mutation {
+    addNewRelationship(from: String!, to: String!, relationship: String!): Relationship!
+}

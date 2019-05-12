@@ -20,4 +20,14 @@ class RelationshipRepositoryImpl {
         return relationships.filter { relationship -> relationship.from == personName }
                 .filter { relationship -> relationship.relationship == type }
     }
+
+    fun addRelationship(from: String, to: String, relationship: String): Relationship{
+        val newRelationship =  Relationship(
+                from = from,
+                to = to,
+                relationship = relationship
+        )
+        repository.save(newRelationship)
+        return newRelationship
+    }
 }

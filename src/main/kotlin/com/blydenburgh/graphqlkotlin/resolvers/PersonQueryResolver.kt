@@ -13,4 +13,8 @@ class PersonQueryResolver(private val personRepositoryImpl: PersonRepositoryImpl
     fun getPersonByName(name: String):List<Person>{
         return personRepositoryImpl.getPersonByName(name = name)
     }
+
+//    fun getAllPeople():List<Person>{
+//        return personRepositoryImpl.getAllPeople()
+//    }
 }
