@@ -13,10 +13,6 @@ class PersonRepositoryImpl(private val mongoOperations: MongoOperations) {
     @Autowired
     lateinit var repository: PersonRepository
 
-//    fun getAllPeople():List<Person>{
-//        return repository.findAll()
-//    }
-
     fun getPersonByName(name: String):List<Person>{
         val query = Query()
         query.addCriteria(Criteria.where("name").`is`(name))

@@ -1,3 +1,8 @@
+type Query {
+# API Version
+version: String!
+}
+
 type Person {
     id: ID!
     name: String!
