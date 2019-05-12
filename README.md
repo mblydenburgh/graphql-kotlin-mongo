@@ -77,7 +77,7 @@ mutation{
 }
 
 query{
-  getPersonByName(name:"Bob"){
+  getPersonByName(name:"Billy"){
     id
     name
     relationships(type:"Friend"){
