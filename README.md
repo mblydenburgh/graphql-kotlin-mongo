@@ -3,6 +3,9 @@
 This project is a small demo that introduces how to write a GraphQL service using Kotlin,
 Spring Boot, and MongoDB. 
 
+Based off of [this project](https://blog.pusher.com/writing-graphql-service-using-kotlin-spring-boot/) (credit to Graham Cox).
+The original project used a local, hardcoded data layer. I wanted to expand on this to incorporate an actual database layer.
+
 ### Getting Started
 - To get started, you can scaffold a project using SpringInitializr by starting a new Maven
  project and selecting the "Web" and "MongoDB" dependencies. You may have to upgrade your 
