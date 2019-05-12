@@ -1,0 +1,13 @@
+type Person {
+    id: ID!
+    name: String!
+    relationships(type: String): [Relationship]!
+}
+
+extend type Query {
+    getPersonByName(name:String!): [Person]!
+}
+
+type Mutation {
+    addNewPerson(name: String!): Person!
+}

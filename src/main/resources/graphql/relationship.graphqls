@@ -1,0 +1,5 @@
+type Relationship {
+ from: String!,
+ to: String!
+ relationship: String!
+}
