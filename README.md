@@ -55,19 +55,9 @@ schema files
 - Sample Queries and Mutations:
 ```
 query{
-  getPersonByName(name:"Mike"){
+  getPersonByName(name:"Bob"){
     id
     name
-  }
-}
-
-query{
-  getPersonByName(name:"Mike"){
-    id
-    name
-    relationships(type:"Spouse"){
-      to
-    }
   }
 }
 
@@ -86,4 +76,13 @@ mutation{
   }
 }
 
+query{
+  getPersonByName(name:"Bob"){
+    id
+    name
+    relationships(type:"Friend"){
+      to
+    }
+  }
+}
 ```
